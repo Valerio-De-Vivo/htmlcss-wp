@@ -6,6 +6,21 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(7, 219, 162);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2f343a ;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
 .clearfix::after{
   content: '';
   display: table;
@@ -151,6 +166,8 @@ aside ul{
 aside ul li {
   margin: 15px 0;
 }
+
+
 /* ______________________________ */
 
 
@@ -231,6 +248,12 @@ footer .col2 i{
   font-size: 60px;
   color: grey;
   padding: 15px 0;
+  transition: transform .3s;
+}
+
+footer .col2 i:hover {
+  transform: scale(1.5);
+  color: rgb(7, 219, 162);
 }
 
 
