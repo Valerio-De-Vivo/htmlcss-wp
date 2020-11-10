@@ -101,10 +101,11 @@ nav ul li{
 nav ul li a{
   color: white;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 nav ul li:hover{
-  background-color: lightgrey;
+  background-color: white;
 }
 
 nav ul li:hover a{
@@ -115,38 +116,93 @@ nav ul li:hover a{
 
 /* MAIN */
 
+
 main{
   width: 80%;
   margin: 20px auto;
 }
 
-.col2{
-  width: 20%;
-  height: 900px;
-}
+/* PRIMA COLONNA */
 
-.white{
+.col-first{
+  width: calc(20% - 20px);
+  padding: 10px;
   background-color: white;
+  border-radius: 5px;
 }
 
-.col6{
+aside i {
+  font-size: 40px;
+  color: orange;
+  vertical-align: top;
+}
+
+aside h2{
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+aside ul{
+  list-style: none;
+}
+
+aside ul li {
+  margin: 15px 0;
+}
+/* ______________________________ */
+
+
+/* SECONDA COLONNA */
+
+.col-second{
   width: calc(60% - 40px) ;
-  height: 600px;
-  background-color: pink;
-  margin: 0 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  margin: 0 40px;
+}
+
+.col-second h2{
+  margin-bottom: 30px;
+  text-shadow: 1px 1px lightgrey;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.col-second p{
+  line-height: 2;
+}
+
+/* ______________________________ */
+
+/* TERZA COLONNA */
+
+.col-third{
+  width: calc(20% - 20px);
 }
 
 .widget{
   width: 100%;
-  height: 200px;
   margin-bottom: 20px;
+  padding: 20px;
   background-color: white;
+  border-radius: 5px;
 }
 
-aside i {
-  font-size: 50px;
-  color: orange;
+.widget h3{
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 30px;
 }
+
+.widget p{
+  line-height: 2;
+}
+
+
 
 /* ______________________________ */
 
