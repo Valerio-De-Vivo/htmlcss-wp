@@ -17,11 +17,22 @@
 }
 
 .container{
-background-image: url('img/natural-pattern.png');
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
+  padding: 10px;
+  background-image: url('img/natural-pattern.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: green;
+}
+
 
 /* ______________________________ */
 
@@ -31,20 +42,75 @@ background-attachment: fixed;
 
 header{
   width: 80%;
-  height: 150px;
+  height: 400px;
   background-color: white;
   margin: auto;
   position: relative;
 }
 
+.sfondo{
+  background-image: url(img/natural-header.jpg);
+  width: 100%;
+  height: 340px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.sfondo .layover{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 10px solid white;
+  position: relative;
+}
+
+.layover .textarea {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+.layover .textarea img {
+  width: 50%;
+}
+
+.layover .textarea h1{
+  color: white;
+  text-transform: uppercase;
+}
+
 nav{
   width: 100%;
   height: 60px;
-  background-color: lightgrey;
+  background-color: grey;
   position: absolute;
   bottom: 0;
   left: 0;
+  text-align: center;
 }
+
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 10px;
+  padding: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  text-transform: uppercase;
+}
+
+nav ul li:hover{
+  background-color: lightgrey;
+}
+
+nav ul li:hover a{
+  color: grey;
+}
+
 
 
 /* MAIN */
@@ -75,6 +141,11 @@ main{
   height: 200px;
   margin-bottom: 20px;
   background-color: white;
+}
+
+aside i {
+  font-size: 50px;
+  color: orange;
 }
 
 /* ______________________________ */
